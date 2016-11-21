@@ -13,6 +13,24 @@
 </head>
 
 <body class="body-Login-back">
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+      <!-- navbar-header -->
+
+         <ul class="nav navbar-top-links navbar-right">
+          <!-- main dropdown -->
+          <li class="dropdown">
+            <a class="btn btn-block btn-social btn-github">
+                <!--<i class="fa fa-github">-</i>--> About us              <!--ATENÇÃO, TENTAR ALTERAR ICON-->
+            </a>
+          </li>
+          <!-- end main dropdown -->
+      </ul>
+      <!-- end navbar-top-links -->
+
+  </nav>
+
+
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-md-offset-4 text-center logo-margin ">
@@ -28,33 +46,48 @@
           <div class="panel-body">
             <form role="form">
               <fieldset>
-                <div class="form-group">
-                  <!-- Input email -->
-                  <p>E-mail:</p>
-                  <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                  <div class="form-group">
+                      <!-- Input Name -->
+                      <p>Name:</p>
+                      <input class="form-control" name="name" type="email" autofocus>
                 </div>
+
                 <div class="form-group">
-                  <!-- Input Name -->
-                  <p>Full Name:</p>
-                  <input class="form-control" placeholder="Name" name="name" type="email" autofocus>
+                    <!-- Input email -->
+                    <p>Email address:</p>
+                    <input class="form-control" name="email" type="email" autofocus>
                 </div>
+
+                <!-- Input password -->
                 <div class="form-group">
-                  <!-- Input Birth Date -->
-                  <p>Birth Day:</p>
-                  <input class="form-control" placeholder="Birth date" name="bdate" type="date" autofocus>
+                    <p>Create a password: </p>
+                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
                 </div>
+
+                <!-- Input password -->
                 <div class="form-group">
-                  <p>Password: </p>
-                  <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                    <p>Confirm your password: </p>
+                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
                 </div>
+
+                <div class="form-group">
+                    <!-- Input Birth Date -->
+                    <p>Birth Day:</p>
+                    <input class="form-control" placeholder="Birth date" name="bdate" type="date" autofocus>
+                </div>
+
+                <p>Gender:</p>
                 <div class="checkbox">
+
                   <label>
-                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="male" checked> Male
                     <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
                   </label>
                 </div>
+                <br>
                 <!-- Change this to a button or input when using this as a form -->
-                <a href="index.html" class="btn btn-lg btn-primary btn-block">Sign UP</a>
+                <a href="index.html" class="btn btn-md btn-primary btn-block">Sign up</a>
               </fieldset>
             </form>
           </div>
