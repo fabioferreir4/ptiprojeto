@@ -21,9 +21,14 @@
           <!-- main dropdown -->
           <li class="dropdown">
             <a class="btn btn-block btn-social btn-github">
-                <!--<i class="fa fa-github">-</i>--> About us              <!--ATENÇÃO, TENTAR ALTERAR ICON-->
+                <!--<i class="fa fa-github">-</i>--> Quem somos?              <!--ATENÇÃO, TENTAR ALTERAR ICON-->
+
             </a>
+
           </li>
+          <a href="index.html">
+            <img src="assets/img/logotipoAPP.png" alt="" width="40" height="40" />
+          </a>
           <!-- end main dropdown -->
       </ul>
       <!-- end navbar-top-links -->
@@ -33,61 +38,58 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-md-offset-4 text-center logo-margin ">
-        <a href="index.html">
-          <img src="assets/img/logotipoAPP.png" alt="" width="100" height="100"/>
-        </a>
-      </div>
       <div class="col-md-4 col-md-offset-4">
         <div class="login-panel panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Please Sign Up</h3>
+            <br>
+            <h3 class="panel-title">Registe-se</h3>
           </div>
+
           <div class="panel-body">
             <form role="form">
               <fieldset>
                   <div class="form-group">
-                      <!-- Input Name -->
-                      <p>Name:</p>
-                      <input class="form-control" name="name" type="text" autofocus>
+                      <!-- Input Nome -->
+                      <p>Nome:</p>
+                      <input class="form-control" name="nome" type="text" autofocus>
                 </div>
 
                 <div class="form-group">
                     <!-- Input email -->
-                    <p>Email address:</p>
-                    <input class="form-control" name="email" type="email" autofocus>
+                    <p>Email:</p>
+                    <input class="form-control" name="email" type="email">
                 </div>
 
                 <!-- Input password -->
                 <div class="form-group">
-                    <p>Create a password: </p>
+                    <p>Criar password: </p>
                     <input class="form-control" placeholder="Password" name="password" type="password" value="">
                 </div>
 
                 <!-- Input password -->
                 <div class="form-group">
-                    <p>Confirm your password: </p>
+                    <p>Confirmar password: </p>
                     <input class="form-control" placeholder="Password" name="password" type="password" value="">
                 </div>
 
                 <div class="form-group">
-                    <!-- Input Birth Date -->
-                    <p>Birth Day:</p>
-                    <input class="form-control" placeholder="Birth date" name="bdate" type="date" autofocus>
+                    <!-- Input Data de nascimento -->
+                    <p>Data de nascimento:</p>
+                    <input class="form-control" name="bdate" type="date">
                 </div>
 
-                <p>Gender:</p>
+                <p>Sexo:</p>
                 <div class="checkbox">
 
                   <label>
-                    <input type="radio" name="gender" value="male" checked> Male
-                    <input type="radio" name="gender" value="female"> Female
-                    <input type="radio" name="gender" value="other"> Other
+                    <input type="radio" name="sexo" value="masculino" checked> Masculino
+                    <input type="radio" name="sexo" value="female"> Feminino
+                    <input type="radio" name="sexo" value="other"> Outro
                   </label>
                 </div>
                 <br>
                 <!-- Change this to a button or input when using this as a form -->
-                <a href="index.html" class="btn btn-md btn-primary btn-block">Sign up</a>
+                <a href="index.html" class="btn btn-md btn-primary btn-block">Confirmar registo</a>
               </fieldset>
             </form>
           </div>

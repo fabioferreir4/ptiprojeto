@@ -31,8 +31,8 @@ limitations under the License.*/
 
  #wrapper {
     width: 100%;
-    margin-top: 55px!important; 
-    background-color:#04B173; 
+    margin-top: 55px!important;
+    background-color:#04B173;
 }
 
 #page-wrapper {
@@ -43,7 +43,7 @@ limitations under the License.*/
 
 
 
-    
+
 
 .navbar-static-side ul li {
     border-bottom:1px solid #84B899 !important;
@@ -320,10 +320,9 @@ table.dataTable thead .sorting:after {
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid #ddd;
-    background-color: #eee !important;
+    background-color: 	#FFFF00 !important;
 }
 
 .show-grid {
     margin: 15px 0;
 }
-
