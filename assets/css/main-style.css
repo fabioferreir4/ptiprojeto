@@ -97,7 +97,7 @@ padding: 20px 15px;
 
   /* Cor da barra de cima */
 #navbar {
-    background-color: #4682B4; /*#1E90FF*/
+    background-color: #9099A2; /*#1E90FF*/
 }
 
 .navbar-brand {
@@ -108,10 +108,10 @@ padding: 20px 15px;
 }
 .top-label {
     position: absolute;
-top: 50%;
-right: 50%;
-margin-top: -24px;
-margin-right: -24px;
+    top: 50%;
+    right: 50%;
+    margin-top: -24px;
+    margin-right: -24px;
 }
 
 /*large font*/
@@ -121,7 +121,7 @@ margin-right: -24px;
 
 /* Cor de fundo do login*/
 .body-Login-back {
-    background-color:#cccccc
+    background-color:#cccccc;
     /*bk-84B899;*/
 }
 
@@ -131,7 +131,7 @@ margin-right: -24px;
 
 /** Cor de fundo do principal no index */
 .navbar-default {
-border-color: #cccccc;
+    border-color: #cccccc;
 }
 /*media queries*/
 
@@ -149,8 +149,8 @@ border-color: #cccccc;
 }
 
 @media(max-width:768px) {
-#wrapper {
-    margin-top:140px!important;
+    #wrapper {
+        margin-top:140px!important;
 
-}
+    }
 }
