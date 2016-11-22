@@ -95,8 +95,9 @@ padding: 20px 15px;
 }
 /* tap nvbar Section */
 
+  /* Cor da barra de cima */
 #navbar {
-    background-color:rgb(83, 163, 163);
+    background-color: #4682B4; /*#1E90FF*/
 }
 
 .navbar-brand {
