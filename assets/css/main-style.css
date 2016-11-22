@@ -53,6 +53,7 @@ margin-bottom: 0px
 .navbar-top-links  .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #75C5B8;
 }
+/*CSS dos icons na barra do top*/
 .navbar-top-links > li > a {
 color: #FFFFFF;
 }
@@ -69,7 +70,7 @@ padding: 20px 15px;
 /* Cor das letras do lateral no index */
  #side-menu a {
             color:#ffffff;
-           border-bottom: 1px solid #ffffff !important;
+           border-bottom: 1px solid silver !important; //---------------------------------------
            height: 55px;
         }
         .selected {
