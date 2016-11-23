@@ -61,7 +61,7 @@ color: #FFFFFF;
 padding: 20px 15px;
 }
 
-/*Cor da lateral no index*/
+/*Cor dos botois da lateral no index*/
 #side-menu {
     background-color:#404040;
     /*#04B173;*/
@@ -74,7 +74,7 @@ padding: 20px 15px;
            height: 55px;
         }
         .selected {
-            background-color:rgb(83, 163, 163);
+            background-color:#D9D9D9; /* cor indicadora de botao premido na barra lateral */
         }
 /* back colors */
         .blue {
@@ -98,7 +98,7 @@ padding: 20px 15px;
 
 /* Cor da barra de cima */
 #navbar {
-    background-color: #9099A2; /*#1E90FF*/
+    background-color:#D9D9D9;   /*#9099A2<- cinza antigo*/
 }
 
 .navbar-brand {

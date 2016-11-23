@@ -33,14 +33,14 @@ limitations under the License.*/
     width: 100%;
     margin-top: 55px!important;
     background-color:rgb(209, 212, 216);
-    /*cinza escuro #404040 ----------------------------------------------- barra lateral inferior*/
+    /*cinza escuro #404040 cor da barra lateral inferior*/
 }
 
 /*cor de fundo do painel principal do perfil do user*/
 #page-wrapper {
     padding: 0 15px;
     min-height: 568px;
-     background-color:rgb(209, 212, 216);
+     background-color:#D9D9D9;/*rgb(209, 212, 216);*/
 }
 
 
@@ -48,7 +48,8 @@ limitations under the License.*/
 
 
 .navbar-static-side ul li {
-    border-bottom:1px solid #84B899 !important;
+    /* cor da linha que separa os elementos na barra lateral user profile anterior #84B899*/
+    border-bottom:1px solid #D9D9D9 !important;
 }
 
 /* Navigation */
