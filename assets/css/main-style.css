@@ -62,7 +62,7 @@ Author: http://binarytheme.com
 
 /*CSS dos icons na barra do top*/
 .navbar-top-links > li > a {
-    color: silver;
+    color: white;
 }
 
 .nav > li > a {
@@ -113,7 +113,7 @@ Author: http://binarytheme.com
 
 /* Cor da barra de cima */
 #navbar {
-    background-color:#D9D9D9;   /*#9099A2<- cinza antigo*/
+    background-color:silver;   /*#D9D9D9<- cinza antigo*/
 }
 
 .navbar-brand {
