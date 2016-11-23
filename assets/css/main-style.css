@@ -10,7 +10,7 @@ Author: http://binarytheme.com
 .user-section {
     margin-top:20px;
     font-size:22px;
-    background-color:rgb(83, 163, 163);
+    background-color:silver;
 }
 
 .user-section-inner {
@@ -62,28 +62,30 @@ Author: http://binarytheme.com
 
 /*CSS dos icons na barra do top*/
 .navbar-top-links > li > a {
-    color: #FFFFFF;
+    color: silver;
 }
 
 .nav > li > a {
     padding: 20px 15px;
 }
 
-/*Cor dos botoes da lateral no index*/
+/* Cor dos botoes do menu lateral do user */
 #side-menu {
-    background-color:#404040;
+    background-color:silver;
     /*#04B173;*/
 }
 
-/* Cor das letras do lateral no index */
 #side-menu a {
+    /* Cor das letras do lateral no index - default #ffffff */
     color:#ffffff;
-    border-bottom: 1px solid silver !important; //---------------------------------------
+    /* cor da borda */
+    border-bottom: 1px solid #D9D9D9 !important; //---------------------------------------
     height: 55px;
 }
 
 .selected {
-    background-color:#D9D9D9; /* cor indicadora de botao premido na barra lateral */
+  /* cor indicadora de botao premido na barra lateral */
+  background-color:#D9D9D9;
 }
 
 /* back colors */
@@ -143,7 +145,7 @@ Author: http://binarytheme.com
     margin:5px;
 }
 
-/** Cor de fundo do principal no index */
+/* Cor de fundo do principal no index */
 .navbar-default {
     border-color: #cccccc;
 }
