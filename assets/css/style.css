@@ -32,9 +32,11 @@ limitations under the License.*/
  #wrapper {
     width: 100%;
     margin-top: 55px!important;
-    background-color:#04B173;
+    background-color:rgb(209, 212, 216);
+    /*cinza escuro #404040 ----------------------------------------------- barra lateral inferior*/
 }
 
+/*cor de fundo do painel principal do perfil do user*/
 #page-wrapper {
     padding: 0 15px;
     min-height: 568px;
