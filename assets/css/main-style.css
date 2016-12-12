@@ -137,6 +137,7 @@ Author: http://binarytheme.com
 
 /* Cor de fundo do login*/
 .body-Login-back {
+    /*background-image: url("img/fundo.png");*/
     background-color:#cccccc;
     /*bk-84B899;*/
 }
