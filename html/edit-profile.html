@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit login</title>
+    <title>Edit profile</title>
     <!-- Core CSS - Include with every page -->
-    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
-    <link href="assets/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
-    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/main-style.css" rel="stylesheet" />
-    <link rel="icon" href="assets/img/favicon.ico">
+    <link href="../assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link href="../assets/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/main-style.css" rel="stylesheet" />
+    <link rel="icon" href="../assets/img/favicon.ico">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logoSemFundo.png" alt="" />
+                    <img src="../assets/img/logoSemFundo.png" alt="" />
                 </a>
             </div>
             <!-- end navbar-header -->
@@ -266,7 +266,7 @@
                     </li>
 
                     <li class="">
-                        <a href="edit-profile.html"><i class="fa fa-flask fa-fw"></i>     Perfil</a>
+                        <a href="edit-profile.html"><i class="fa fa-home fa-fw"></i>     Perfil</a>
                     </li>
 
                      <li>
@@ -284,34 +284,46 @@
             <div class="row">
                 <!-- Page Header -->
                 <div class="col-lg-12">
-                    <h4  class="page-header"><b>Editar o meu início de sessão</b></h4>
+                    <h4  class="page-header"><b>Editar o meu perfil</b></h4>
+                </div>
+                <p><b>Alterar foto:</b></p>
+                <div class="user-section-inner">
+                    <img src="assets/img/user.png" alt="">
+                </div>
+                <div class="user-info">
+                    <div>
+                      <input type="file" name="file" id="file" onchange="this.form.fakeupload.value = this.value;" style="font-size: 12px;" />
+                      <br>
+                      <sub>(Selecione uma imagem com menos de 1 megabyte de tamanho)</sub>
+                    </div>
                 </div>
 
-                <div class="panel-body">
-                  <form role="form">
-
-                <div class="form-group">
                     <br>
-                    <!-- Alterar a palavra passe -->
-                    <p><b>Alterar password</b></p>
-                    <input class="form-control" name="atual" placeholder="Atual" type="password" style="width: 300px;">
                     <br>
-                    <input class="form-control" name="nova" placeholder="Nova" type="password" style="width: 300px;">
-                    <input class="form-control" name="confirmar" placeholder="Confirmar nova password" type="password" style="width: 300px;">
-              </div>
+                    <!-- Alterar o nome -->
+                    <p><b>Alterar o nome:</b></p>
+                    <input class="form-control" name="nome" type="text" style="width: 300px;">
 
-              <br>
-              <br>
 
-              <fieldset>
-                <a href="user-profile.html" class="btn btn-md btn-primary">Salvar </a>
-                <!--PHP?? <button type="button" class="btn btn-primary">Salvar</button> -->
+              <div class="form-group">
+                  <br>
+                  <!--  Alterar a data de nascimento -->
+                  <p><b>Alterar data de nascimento:</b></p>
+                  <input class="form-control" name="bdate" type="date" style="width: 300px;">
+            </div>
 
-                <a href="user-profile.html" class="btn btn-md btn-danger">Cancelar</a>
-              </fieldset>
-
+            </fieldset>
           </form>
         </div>
+
+        <br>
+        <br>
+        <fieldset>
+          <a href="user-profile.html" class="btn btn-md btn-primary">Salvar </a>
+          <!--PHP?? <button type="button" class="btn btn-primary">Salvar</button> -->
+
+          <a href="user-profile.html" class="btn btn-md btn-danger">Cancelar</a>
+        </fieldset>
 
                 <!--End Page Header -->
             </div>
