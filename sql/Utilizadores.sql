@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS utilizador;
+CREATE TABLE utilizador(
+	id_user				INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome				VARCHAR(50) NOT NULL,
+	mail				VARCHAR(50) NOT NULL UNIQUE,
+	password 			VARCHAR(20) NOT NULL,
+    idade				INTEGER DEFAULT NULL CHECK(idade BETWEEN 0 AND 120),
+    genero 				CHAR DEFAULT NULL CHECK(genero IN('M', 'F')),
+	contacto			INTEGER DEFAULT NULL);
+

@@ -1,0 +1,94 @@
+check_login -> Método: GET; Tabela: utilizador; Recebe: email + password; URL:..../checklogin.php/utilizador/email/password;
+	       Resposta: Sucesso - JSON com toda a informação do utilizador;
+			 Erro - "Error".
+Recebe o email e a password e verifica se existe algum utilizador com email e password igual, caso exista constroi JSON com toda 
+a informação desse utilizador e envia, caso não exista envia JSON com mensagem de erro.
+------------------------------------------------------------------------------------------------------------------------------
+
+get_estatisticas_of -> Método: GET; Tabela: viagem; Recebe: id_viagem; URL:..../get_estatisticas_of.php/viagem/id_viagem;
+			Resposta: Sucesso - JSON com: duracao , distancia, velocidade_media, consumo_medio;
+				  Erro - "Error: Not found".
+Recebe id_viagem e constroi e envia JSON com a informação de estatisticas dessa viagem caso exista, caso não exista envia JSON com mensagem de erro.
+------------------------------------------------------------------------------------------------------------------------------
+
+get_marca_of -> Método: GET; Tabela: veiculo; Recebe: id_user; URL:..../get_marca_of.php/veiculo/id_user;
+		Resposta: Sucesso - JSON com: id_veiculo, marca_modelo;
+			  Erro - "Error: Not found".
+Recebe o id_user e constroi e envia JSON com o id_veiculo e marca_modelo desse utilizador caso tenha veiculos associados, caso não tenha envia JSON com mensagem de erro.
+-----------------------------------------------------------------------------------------------------------------------------
+
+get_all_eventos -> Método: GET; Tabela: eventos; URL:..../get_all_eventos.php/eventos;
+		   Resposta: Sucesso - JSON com: *(id_evento, tipo, latitude, longitude);
+			     Erro - "Error: Not found".
+Constroi e envia JSON com toda a informação de todos os eventos presentes na base de dados caso existam, caso não existam envia JSON com mensagem de erro.
+(Relatório de estatisticas para autarquia)
+-----------------------------------------------------------------------------------------------------------------------------
+
+get_eventos_of -> Método: GET; Tabela: eventos; Recebe: id_viagem; URL:..../get_eventos_of.php/eventos/id_viagem;
+		   Resposta: Sucesso - JSON com: *(id_evento, tipo, latitude, longitude);
+			     Erro - "Error: Not found".
+Recebe um id_viagem e constroi e envia JSON com informação de todos os enventos associados a essa viagem caso existam, caso não existam envia mensagem de erro.
+-----------------------------------------------------------------------------------------------------------------------------
+
+get_viagens_of -> Método: GET; Tabela: viagem; Recebe: id_user; URL:..../get_viagens_of.php/viagem/id_user;
+		  Resposta: Sucesso - JSON com: id_viagem, id_veiculo, data_inicio, rua_inicio, rua_fim;
+			    Erro - "Error: Not found".
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+get_coordenadas_of -> Método: GET; Tabela: coordenadas; Recebe: id_viagem; URL:..../get_coordenadas_of.php/coordenadas/id_viagem;
+		      Resposta: Sucesso - JSON com: latitude, longitude;
+			        Erro - "Error: Not found".
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+get_all_estatisticas -> Método: GET; Tabela: viagem; URL:..../get_coordenadas_of.php/viagem;
+		        Resposta: Sucesso - JSON com:duracao , distancia, velocidade_media, consumo_medio;;
+			          Erro - "Error: Not found".
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+utilizador -> Método: GET/POST/DELETE/PUT; Tabela: utilizador; Recebe: id_user(menos para o método POST); URL:..../utilizador.php/utilizador/id_user;
+		        Resposta: Sucesso - GET: recebe tudo de um determinado utilizador;
+					  - POST: envia JSON com informação de um novo utilizador;
+					  - PUT: envia JSON com informação atualizada de um determinado utilizador;
+					  - DELETE: elimina um determinado utilizador;
+			          Erro - "Error: Not found".
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+veiculo -> Método: GET/POST/DELETE/PUT; Tabela: veiculo; Recebe: id_veiculo(menos para o método POST); URL:..../veiculo.php/veiculo/id_veiculo;
+		        Resposta: Sucesso - GET: recebe tudo de um determinado veiculo;
+					  - POST: envia JSON com informação de um novo veiculo;
+					  - PUT: envia JSON com informação atualizada de um determinado veiculo;
+					  - DELETE: elimina um determinado veiculo;
+			          Erro - "Error: Not found".
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+viagem -> Método: GET/POST/DELETE/PUT; Tabela: viagem; Recebe: id_viagem(menos para o método POST); URL:..../viagem.php/viagem/id_viagem;
+		        Resposta: Sucesso - GET: recebe tudo de uma determionada viagem;
+					  - POST: envia JSON com informação de uma nova viagem;
+					  - PUT: envia JSON com informação atualizada de uma determinada viagem;
+					  - DELETE: elimina uma determinada viagem;
+			          Erro - "Error: Not found".
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+coordenadas -> Método: GET/POST/DELETE/PUT; Tabela: coordenadas; Recebe: id_coordenadas(menos para o método POST); URL:..../coordenadas.php/coordenadas/id_coordenadas;
+		        Resposta: Sucesso - GET: recebe tudode uma determinada coordenada;
+					  - POST: envia JSON com informação de uma nova cooredenada;
+					  - PUT: envia JSON com informação atualizada de uma determinada coordenada;
+					  - DELETE: elimina um determinada coordenada;
+			          Erro - "Error: Not found".
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+eventos -> Método: GET/POST/DELETE/PUT; Tabela: eventos; Recebe: id_eventos(menos para o método POST); URL:..../eventos.php/eventos/id_eventos;
+		        Resposta: Sucesso - GET: recebe tudo de um determinado evento;
+					  - POST: envia JSON com informação de um novo evento;
+					  - PUT: envia JSON com informação atualizada de um determinado evento;
+					  - DELETE: elimina um determinado evento;
+			          Erro - "Error: Not found".
+
+-----------------------------------------------------------------------------------------------------------------------------
