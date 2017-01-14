@@ -14,8 +14,8 @@ Author: http://binarytheme.com
 }
 
 .user-section-inner {
-    height: 65px;
-    width: 65px;
+    height: 110px;   \\quadrado que tem a figura
+    width: 110px;     \\quadrado que tem a figura
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -27,16 +27,17 @@ Author: http://binarytheme.com
 }
 
 .user-section-inner img {
-    margin-left:10px;
-    width:55px;
-    height:60px;
+  max-width:120px;
+  max-height:120px;
+  width: auto;
+  height: auto;
 
 }
 
 .user-info {
     display: block;
     color:#000!important;
-    display: inline-block;
+    display: block;
     padding: 15px;
     margin-bottom: 0px
 }
